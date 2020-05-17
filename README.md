@@ -163,3 +163,58 @@ function countPositives(arr){
 
 //Evens and Odds
 
+// Increment The Seconds
+
+function IncrementTheSeconds(arr){
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]%2 !== 0){
+      arr[i]++;
+      console.log(arr[i]);
+    }
+  }
+  return arr;
+}
+
+// Previous Lengths
+
+// Add Seven to Most
+
+function AddSeven(arr){
+  var arrnew = [];
+  for(var i=1; i<arr.length; i++){
+    arr[i]+=7;
+    arrnew.push(arr[i]);
+  }
+  return arrnew;
+}
+
+// Reverse Array
+
+function Reverse(arr){
+  var x=arr.length-1;
+  for(var i=0; i<arr.length; i++){
+    var temp = arr[i];
+    if(x>i){
+      arr[i] = arr[x];
+      arr[x] = temp;
+      x--;
+    }
+  }
+}
+Reverse([3,1,6,4,2]);
+
+// Outlook: Negative
+
+function outlook(arr){
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]>0){
+      arr[i] = arr[i] + (-arr[i]*2);
+    }
+  }
+  return arr;
+}
+
+// Always Hungry
+
+
+
