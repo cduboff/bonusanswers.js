@@ -81,3 +81,22 @@ function celsiusToFahrenheit(cDegrees){
   var Fahrenheit = (9/5 * cDegrees) + 32;
   return(Fahrenheit);
 }
+
+// Celsius and Fahrenheit (optional)
+
+function celsiusToFahrenheit(cDegrees){
+  var Fahrenheit = (9/5 * cDegrees) + 32;
+  return(Fahrenheit);
+}
+
+var Celsius = 200;
+
+while(Celsius<celsiusToFahrenheit(Celsius)){
+  Celsius--;
+  if(Celsius==celsiusToFahrenheit(Celsius)){
+    console.log("They're the same!" +Celsius)
+  }
+}
+
+
+// Biggie Size
