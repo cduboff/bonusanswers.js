@@ -100,3 +100,66 @@ while(Celsius<celsiusToFahrenheit(Celsius)){
 
 
 // Biggie Size
+
+function BiggieSize(arr){
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]>=0){
+      arr[i] = "big";
+    }
+  }
+  console.log(arr);
+}
+
+// Print low, Return high
+
+function printLow(arr){
+  var min = arr[0];
+  var max = arr[0];
+  for(var i=1; i<arr.length; i++){
+    if(arr[i]<min){
+      min = arr[i];
+    }
+    if(arr[i]>max){
+      max = arr[i];
+    }
+  }
+  console.log(min);
+  return max;
+}
+
+// Print One, Return Another
+
+function printOne(arr){
+  console.log(arr[arr.length-2]);
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]%2 !== 0){
+      return arr[i];
+    }
+  }
+}
+
+// Double vision
+
+function double(arr){
+  var arrnew = [];
+  for(var i=0; i<arr.length; i++){
+    arrnew.push(arr[i] * 2);
+  }
+  return(arrnew);
+}
+
+// Count Positives
+
+function countPositives(arr){
+  var temp = [];
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]>0){
+      temp.push(arr[i]);
+    }
+  }
+  arr[arr.length-1] = temp.length;
+  return arr;
+}
+
+//Evens and Odds
+
