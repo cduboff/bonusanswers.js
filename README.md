@@ -163,6 +163,17 @@ function countPositives(arr){
 
 //Evens and Odds
 
+function evensAndOdds(arr){
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]%2 !== 0 && arr[i+1]%2 !== 0 && arr[i+2]%2 !== 0){
+      console.log("That's odd!");
+    }
+    if(arr[i]%2 === 0 && arr[i+1]%2 === 0 && arr[i+2]%2 === 0){
+      console.log("Even more so!");
+    }
+  }
+}
+
 // Increment The Seconds
 
 function IncrementTheSeconds(arr){
@@ -176,6 +187,13 @@ function IncrementTheSeconds(arr){
 }
 
 // Previous Lengths
+
+function PreviousLengths(arr){
+  for(var i=0; i<arr.length; i++){
+    arr[i] = arr[i].length;
+  }
+  return arr;
+}
 
 // Add Seven to Most
 
@@ -216,5 +234,40 @@ function outlook(arr){
 
 // Always Hungry
 
+function AlwaysHungry(arr){
+  var arrtest = [];
+  for(var i=0; i<arr.length; i++){
+    if(arr[i] != 'food'){
+      arrtest.push(arr[i]);
+    }
+    else if(console.log("yummy"));
+  }
+  // This part of did not work
+  if(arrtest == arr){
+    console.log("I'm hungry");
+  }
+}
 
+// Swap toward the center
+
+function SwapTowardCenter(arr){
+var x=arr.length-1;
+  for(var i=0; i<arr.length; i+=2){
+    var temp = arr[i];
+    if(x>i){
+      arr[i] = arr[x];
+      arr[x] = temp;
+      x = x - 2;
+    }
+  }
+}
+
+// Scale the Array
+
+function Scale(arr, num){
+  for(var i=0; i<arr.length; i++){
+    arr[i] = arr[i] * num;
+  }
+  return arr;
+}
 
